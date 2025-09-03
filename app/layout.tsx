@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "The Normality",
     images: [
       {
-        url: "https://the-normality.vercel.app/screenshots/intro-page.png",
+        url: "https://the-normality.vercel.app/preview.png",
         width: 1200,
         height: 630,
         alt: "The Normality Game - QA Inspector Challenge",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The Normality - Anomaly Spotting Game",
     description: "Inspect the abandoned website of a deceased developer. Spot anomalies and test your observation skills in The Normality.",
-    images: ["https://the-normality.vercel.app/screenshots/intro-page.png"],
+    images: ["https://the-normality.vercel.app/preview.png"],
   },
 };
 
