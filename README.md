@@ -112,7 +112,7 @@ npm run dev
   avatar1.jpg
   avatar2.jpg
   ...other assets
-
+```
 
 ## Contributing
 
@@ -126,4 +126,7 @@ npm run dev
 ## License
 
 This project is licensed under the MIT License.
+
+```
+
 ```
