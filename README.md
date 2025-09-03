@@ -81,22 +81,38 @@ npm run dev
 
 ## Project Structure
 
+```text
 /app
-/end
-/components - button-group.tsx - exit-button.tsx - outcome-text.tsx - page.tsx
-/game
-/components - anomaly-injector.tsx - game-dock.tsx - hero-image.tsx - landing-page.tsx - page-transition.tsx - page.tsx
-/lib - anomalies.ts - utils.ts
-/screenshots - intro-page.png - gameplay.png - end-screen.png
-/store
+  /end
+    /components
+      button-group.tsx
+      exit-button.tsx
+      outcome-text.tsx
+      page.tsx
+  /game
+    /components
+      anomaly-injector.tsx
+      game-dock.tsx
+      hero-image.tsx
+      landing-page.tsx
+      page-transition.tsx
+      page.tsx
+  /lib
+    anomalies.ts
+    utils.ts
+  /screenshots
+    intro-page.png
+    gameplay.png
+    end-screen.png
+  /store
+    game-store.ts
+/public
+  hero-image.jpg
+  hero-image-glitched.jpg
+  avatar1.jpg
+  avatar2.jpg
+  ...other assets
 
-- game-store.ts
-  /public
-- hero-image.jpg
-- hero-image-glitched.jpg
-- avatar1.jpg
-- avatar2.jpg
-- ...other assets
 
 ## Contributing
 
@@ -110,3 +126,4 @@ npm run dev
 ## License
 
 This project is licensed under the MIT License.
+```
