@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Normality
 
-## Getting Started
+**A web-based anomaly detection game that tests perception and attention to detail.**
 
-First, run the development server:
+---
+
+## Overview
+
+_The Normality_ is a game where players act as a QA inspector tasked with reviewing a website left unfinished by its deceased developer. The game mixes suspense, corporate aesthetics, and attention-focused gameplay.
+
+Players must detect anomalies in the website layout while following inspection protocols. Winning requires careful observation and consecutive correct evaluations.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Gameplay](#gameplay)
+- [Screenshots](#screenshots)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Gameplay
+
+- Start as a QA inspector reviewing a website.
+- The first round contains no anomalies for reference.
+- Click **Looks Good** if the page seems normal.
+- Click **Looks Off** if you detect an anomaly.
+- Winning conditions:
+  - Complete **8 consecutive correct evaluations**, OR
+  - Discover **all known anomalies**.
+
+After the end screen, players can:
+
+- **File Report & Exit:** keep progress toward all anomalies
+- **Clear Anomaly Progression:** reset all progress
+
+## Screenshots
+
+### Introductory Page
+
+![Intro Page](./screenshots/intro-page.png)
+
+### Gameplay Example
+
+![Gameplay](./screenshots/gameplay.png)
+
+### End Screen
+
+![End Screen](./screenshots/end-screen.png)
+
+## Technologies
+
+- **Frontend:** Next.js, React, Tailwind CSS, daisyUI
+- **State Management:** Zustand
+- **Animations:** Framer Motion
+- **Deployment:** Vercel
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/KarimChehab2003/the-normality.git
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+/app
+/end
+/components - button-group.tsx - exit-button.tsx - outcome-text.tsx - page.tsx
+/game
+/components - anomaly-injector.tsx - game-dock.tsx - hero-image.tsx - landing-page.tsx - page-transition.tsx - page.tsx
+/lib - anomalies.ts - utils.ts
+/screenshots - intro-page.png - gameplay.png - end-screen.png
+/store
 
-## Learn More
+- game-store.ts
+  /public
+- hero-image.jpg
+- hero-image-glitched.jpg
+- avatar1.jpg
+- avatar2.jpg
+- ...other assets
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-name`)
+3. Make your changes
+4. Commit (`git commit -m "Add feature"`)
+5. Push (`git push origin feature-name`)
+6. Open a pull request
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License.
