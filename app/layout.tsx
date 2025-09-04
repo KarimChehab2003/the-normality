@@ -34,6 +34,13 @@ export const metadata: Metadata = {
     description: "Inspect the abandoned website of a deceased developer. Spot anomalies and test your observation skills in The Normality.",
     images: ["https://the-normality.vercel.app/preview.png"],
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon0.svg", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/apple-icon.png" }]
+  }
 };
 
 export default function RootLayout({
