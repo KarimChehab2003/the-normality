@@ -1,5 +1,6 @@
 "use client";
 
+import { anomalies } from "@/app/lib/anomalies";
 import {
     selectGlobalAnomalyTally,
     selectRoundCounter,
@@ -17,7 +18,7 @@ function OutcomeText() {
         // eslint-disable-next-line 
     }, [])
 
-    const hasClearedByAnomalies = snapshot.globalAnomalyTally.size === 10;
+    const hasClearedByAnomalies = snapshot.globalAnomalyTally.size === Object.keys(anomalies).length;
     const hasClearedByRounds = snapshot.roundCounter >= 8;
 
     return (

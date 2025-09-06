@@ -13,7 +13,7 @@ function AnomalyInjector({ children }: { children: React.ReactNode }) {
     const roundCounter = useGameStore(selectRoundCounter);
     const globalAnomalyTally = useGameStore(selectGlobalAnomalyTally);
 
-    if (roundCounter === 9 || globalAnomalyTally.size === 10) {
+    if (roundCounter === 9 || globalAnomalyTally.size === Object.keys(anomalies).length) {
         redirect("/end");
     }
 
@@ -30,6 +30,11 @@ function AnomalyInjector({ children }: { children: React.ReactNode }) {
         const keys = Object.keys(anomalies);
         const unseen = keys.filter(key => !activeSeenAnomalies.has(key));
         const randomAnomaly = unseen[Math.floor(Math.random() * unseen.length)];
+
+        // For Testing each anomaly
+        // const randomAnomaly = "wrong-icon"
+        console.log(randomAnomaly)
+
         anomalies[randomAnomaly].apply();
         setActiveAnomaly(randomAnomaly);
 

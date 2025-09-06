@@ -4,7 +4,7 @@ import LandingPage from "./components/landing-page";
 
 function Game() {
     return (
-        <div>
+        <div className="relative min-h-screen flex flex-col">
             <AnomalyInjector>
                 <LandingPage />
             </AnomalyInjector>

@@ -1,7 +1,7 @@
 "use client";
 import heroImage from "@/public/hero-image.jpg"
 import heroImageGlitched from "@/public/hero-image-glitched.jpg"
-import { selectActiveAnomaly, useGameStore } from "../../store/game-store";
+import { selectActiveAnomaly, useGameStore } from "@/app/store/game-store"
 import Image from "next/image";
 
 function HeroImage() {
