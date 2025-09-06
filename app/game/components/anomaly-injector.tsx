@@ -33,7 +33,7 @@ function AnomalyInjector({ children }: { children: React.ReactNode }) {
 
         // For Testing each anomaly
         // const randomAnomaly = "wrong-icon"
-        console.log(randomAnomaly)
+        // console.log(randomAnomaly)
 
         anomalies[randomAnomaly].apply();
         setActiveAnomaly(randomAnomaly);
